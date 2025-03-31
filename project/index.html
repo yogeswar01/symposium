@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar'25 - Symposium</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Popup Container -->
+  <div id="popup" class="popup">
+    <div class="popup-content1">
+        <span class="close-btn" onclick="closePopup1()">&times;</span>
+        <img src="MAIN POSTER.jpeg" alt="MAIN POSTER" class="popup-image">
+        <p>🔥 REGISTER NOW!!! 🔥</p>
+    </div>
+</div>
+    <div class="container">
+        <header>
+            <img src="eve-logo.jpeg" alt="Stellar Logo" class="header-logo">
+            <div class="header-content">
+                <h1>Stellar'25</h1>
+                <p>A National Level Intercollegiate English Fest</p>
+            </div>
+        </header>
+        
+
+        <div class="events-grid">
+            <div class="event-card">
+                <img src="AD MAD SHOW.jpg" 
+                     alt="Ad Mad Show">
+                <div class="event-content">
+                    <h3>Ad Mad Show</h3>
+                    <p>Unleash your creativity in advertising! Create and present innovative ad campaigns for fictional products. Show your marketing genius!</p>
+                    <button class="view-details-button" onclick="openPopup('adMadPopup')">View Details</button>
+                </div>
+            </div>
+            <div class="event-card">
+                <img src="SQUID GAME.jpg"
+                     alt="Squid Game">
+                <div class="event-content">
+                    <h3>SQUID GAME</h3>
+                    <p>Do you have what it takes to survive all rounds and claim victory? Join us for an electrifying Squid Game-themed event, where strategy, skill, and a bit of luck will determine the ultimate champion!</p>
+                    <button class="view-details-button" onclick="openPopup('squidGamePopup')">View Details</button>
+                </div>
+            </div>
+            <div class="event-card">
+                <img src="scavenger hunt.jpg"
+                     alt="Scavenger Hunt">
+                <div class="event-content">
+                    <h3>Scavenger Hunt</h3>
+                    <p>The Scavenger Hunt is an exciting, campus-wide adventure where teams race against time to solve clues, complete tasks, and explore key locations.</p>
+                    <button class="view-details-button" onclick="openPopup('scavengerHuntPopup')">View Details</button>
+                </div>
+            </div>           
+
+            <div class="event-card">
+                <img src="CLOUT TACTIX.jpg"
+                     alt="Clout Tactix">
+                <div class="event-content">
+                    <h3>Clout Tactix</h3>
+                    <p>Clout Tactix is an exciting event that combines influencer creativity and managerial problem-solving.</p>
+                    <button class="view-details-button" onclick="openPopup('cloutTactixPopup')">View Details</button>
+                </div>
+            </div>
+            <div class="event-card">
+                <img src="IPL AUCTION.jpg"
+                     alt="IPL Auction">
+                <div class="event-content">
+                    <h3>IPL Auction</h3>
+                    <p>This engaging and fun-filled event is designed to test your teamwork, analytical skills, and cricket knowledge.</p>
+                    <button class="view-details-button" onclick="openPopup('iplAuctionPopup')">View Details</button>
+                </div>
+            </div>
+            <div class="event-card">
+                <img src="CRESCENDO CLASH.jpg"
+                     alt="Crescendo Clash">
+                <div class="event-content">
+                    <h3>Crescendo Clash</h3>
+                    <p>The Instrumental Competition is a vibrant event designed to bring together talented musicians from different backgrounds to showcase their skills and passion for music.</p>
+                    <button class="view-details-button" onclick="openPopup('crescendoClashPopup')">View Details</button>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <img src="BLOCKBUSTER BONANZA.jpg"
+                     alt="Blockbuster Bonanza">
+                <div class="event-content">
+                    <h3>Blockbuster Bonanza</h3>
+                    <p>Blockbuster Bonanza is a fun and exciting game where players answer questions or participate in challenges based on popular blockbuster movies and famous songs.</p>
+                    <button class="view-details-button" onclick="openPopup('blockbusterPopup')">View Details</button>
+                </div>
+            </div>
+
+            
+            <div class="event-card">
+                <img src="MIC & MINGLE.jpg"
+                     alt="Mic & Mingle">
+                <div class="event-content">
+                    <h3>Mic & Mingle</h3>
+                    <p>It is a solo competition. Just grab the mic and showcase any talent of yours on the stage.</p>
+                    <button class="view-details-button" onclick="openPopup('micMinglePopup')">View Details</button>
+                </div>
+            </div>
+
+
+
+            <div class="event-card">
+                <img src="SCRAMBLED EGGS.jpg" 
+                     alt="Scrambled Eggs">
+                <div class="event-content">
+                    <h3>Scrambled Eggs</h3>
+                    <p>Scrambled Eggs is a fun and engaging memory-based game that challenges participants to observe and recall details quickly.</p>
+                    <button class="view-details-button" onclick="openPopup('scrambledEggsPopup')">View Details</button>
+                </div>
+            </div>
+            <div class="event-card">
+                <img src="ADAPT-A-DEBATE.jpg" 
+                     alt="Adapt a Debate">
+                <div class="event-content">
+                    <h3>Adapt-a-Debate</h3>
+                    <p>Adapt-a-Debate is a twist on traditional debating, where participants adapt to unexpected challenges and rapid shifts in arguments.</p>
+                    <button class="view-details-button" onclick="openPopup('adaptDebatePopup')">View Details</button>
+                </div>
+            </div>
+            <div class="event-card">
+                <img src="SDG CHALLENGE.jpeg"
+                     alt="SDG Challenge">
+                <div class="event-content">
+                    <h3>SDG Challenge</h3>
+                    <p>Students create a short, engaging Instagram or TikTok Reel demonstrating a simple action that supports any of the 17 Sustainable Development Goals (SDG).</p>
+                    <button class="view-details-button" onclick="openPopup('sdgChallengePopup')">View Details</button>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <img src="WISDOM TALK.jpg"
+                     alt="Wisdom Talk">
+                <div class="event-content">
+                    <h3>WISDOM TALK</h3>
+                    <p>Participants will have to pick a proverb related to Indian knowledge and wisdom, and record a speech explaining its meaning, and giving real-life examples.</p>
+                    <button class="view-details-button" onclick="openPopup('wisdomTalkPopup')">View Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup for Ad Mad Show -->
+    <div class="popup" id="adMadPopup">
+        <div class="popup-content">
+            <button class="close-button" onclick="closePopup('adMadPopup')">×</button>
+            <h2>AD MAD SHOW</h2>
+            <p>The Ad Mad Show is a lively and entertaining competition that tests participants' creativity, marketing skills, and spontaneity. Teams must think on their feet to deliver engaging and humorous advertisements, making for an exciting and fun-filled experience.</p>
+            
+            <h3>EVENT FORMAT:</h3>
+            <p>Teams will create a short advertisement for an existing or fictional product. Students will be assigned products on the spot and given 10-15 minutes for preparation. After this time, each team must market their product in a clear, creative, and humorous way. The team with the best marketing presentation will be declared as the winner.</p>
+            <p><strong>Preparation:</strong> Simple props and ensuring access to a stage or space for presentations.</p>
+            
+            <h3>Rules and Regulations</h3>
+            <ol>
+                <li>Team Size: 2 to 5 members.</li>
+                <li>Product Assignment: Products will be assigned randomly by the organizers. Teams must stick to the assigned product and cannot request changes.</li>
+                <li>Preparation Time: Teams will have 10-15 minutes for preparation. No additional time will be given.</li>
+                <li>Duration of Advertisement: Each advertisement should be between 3 to 5 minutes. Exceeding the time limit may result in penalties.</li>
+                <li>Content Guidelines: Advertisements must be original, creative, and humorous. Use of offensive language or inappropriate content is strictly prohibited.</li>
+                <li>Props and Materials: Teams may use only the props and materials provided by the organizers (if applicable) or items available to them during preparation.</li>
+                <li>Code of Conduct: All participants must maintain a respectful and professional attitude toward judges, organizers, and other teams.</li>
+                <li>Disqualification: Teams may be disqualified for violating any of the rules, including plagiarism, offensive behaviour, or exceeding time limits excessively.</li>
+            </ol>
+            
+            <h3>Judging Criteria:</h3>
+            <p>Creativity- 30 points, Clarity- 20 points, Engagement- 15 points, Humour- 20 points, Teamwork- 15 points</p>
+            
+            <p><strong>Student Coordinator:</strong> Sreemathi P.S, Ph: 9514237450</p>
+        </div>
+    </div>
+
+    <!-- Popup for Adapt-a-Debate -->
+    <div class="popup" id="adaptDebatePopup">
+        <div class="popup-content">
+            <button class="close-button" onclick="closePopup('adaptDebatePopup')">×</button>
+            <h2>ADAPT-A-DEBATE</h2>
+            <p>Adapt-a-Debate is a twist on traditional debating, where participants adapt to unexpected challenges and rapid shifts in arguments.</p>
+            
+            <h3>EVENT FORMAT:</h3>
+            <h4>Round 1:</h4>
+            <p>Traditional Debate Topic: Teams will be assigned debate topics. Judging is based on argument strength, clarity, and rebuttal skills. Top teams qualify for Round 2.</p>
+            <h4>Round 2:</h4>
+            <p>Debate with Twists: In this round, twists are introduced to make the debate unpredictable and fun.</p>
+            <h4>Surprise Challenges:</h4>
+            <ul>
+                <li><strong>Emoji Explanation:</strong> Teams must present arguments using emojis (on cards or screens).</li>
+                <li><strong>Silent Speaker:</strong> One team member argues using only gestures or props.</li>
+                <li><strong>Time Freeze:</strong> A random timer interruption forces teams to rethink and summarize arguments quickly.</li>
+            </ul>
+            
+            <h3>Rules and Regulations</h3>
+            <ul>
+                <li>Team: 3-5 members.</li>
+                <li>Respect opponents, judges, and audience at all times.</li>
+                <li>Time limits for arguments and preparation must be strictly followed.</li>
+                <li>Round 1 topics will be assigned randomly; stances (For/Against) cannot be changed.</li>
+                <li>Judges’ decisions are final and cannot be contested.</li>
+                <li>Misconduct or failure to adhere to rules will result in disqualification.</li>
+            </ul>
+            
+            <h3>Judging Criteria:</h3>
+            <p>Adaptability- 20 points, Argument Strength- 30 points, Creativity- 20 points, Teamwork- 15 points, Engagement- 15 points</p>
+            
+            <p><strong>Student Coordinator:</strong> Srinivas S, Ph: 7094287240</p>
+        </div>
+    </div>
+
+    <!-- Popup for Clout Tactix -->
+    <div class="popup" id="cloutTactixPopup">
+        <div class="popup-content">
+            <button class="close-button" onclick="closePopup('cloutTactixPopup')">×</button>
+            <h2>CLOUT TACTIX</h2>
+            <p>Clout Tactix is an exciting event that combines influencer creativity and managerial problem-solving. By embodying influencers with distinct niches and personalities, participants will tackle crises, market innovative ideas, and collaborate with contrasting personas.</p>
+            
+            <h3>EVENT FORMAT:</h3>
+            <h4>Round 1: Introduction</h4>
+            <ul>
+                <li>Each team is assigned an influencer persona and niche through a game of Musical Chairs.</li>
+                <li>One member from each team participates.</li>
+                <li>A persona is pasted to the back of every chair, and wherever the participant sits when the music stops will determine their persona.</li>
+                <li>Duration: 5 mins</li>
+                <li>Then, they must talk about their personality and their motto for living life in relation to their assigned persona.</li>
+                <li>Duration: Preparation - 5 mins | Performance - 2 mins</li>
+            </ul>
+            <h4>Round 2: Reputation in Crisis</h4>
+            <ul>
+                <li>Each persona is given a problematic scenario which they have to manage in order to protect their reputation.</li>
+                <li>Volunteers from other teams can act as their disappointed clients or followers.</li>
+                <li>The performing team is supposed to address the complaints and pitch a PR strategy to regain trust among their followers by taking resolutions.</li>
+                <li>Time breakdown: Preparation - 5 mins | Performance - 2 to 3 mins.</li>
+            </ul>
+            <h4>Round 3: Collaboration Chaos</h4>
+            <ul>
+                <li>15 Emoji balloons will be taped to the wall, with each balloon having a product (printed and pasted) in it.</li>
+                <li>Each team will be asked to choose a balloon and thus they will receive the product that they are supposed to promote.</li>
+                <li>Each team is expected to promote the product by relating it with their persona and how they would use it.</li>
+                <li>Time breakdown: Preparation (including selection) - 10 mins | Performance - 3 to 5 mins.</li>
+            </ul>
+            <h4>Round 4: Live Q&A</h4>
+            <ul>
+                <li>Competing teams and judges pose questions to the performing team, bringing up their crisis era and their recent collaboration.</li>
+                <li>The performing team is supposed to give convincing answers to the questions they are bombarded with.</li>
+                <li>Duration: 3 to 5 mins per team.</li>
+            </ul>
+            
+            <h3>JUDGING CRITERIA</h3>
+            <ul>
+                <li>Management Skills: Effective handling of crises - 10 marks</li>
+                <li>Creativity: Unique marketing pitches and solutions - 10 marks</li>
+                <li>Adaptability: Handling collaborations with opposite personas - 10 marks</li>
+                <li>Engagement: Convincing, fun, and audience-focused presentations - 10 marks</li>
+            </ul>
+            <p><strong>Note:</strong></p>
+            <ul>
+                <li>Time limits will be strictly followed.</li>
+                <li>Adequate safety measures will be in place.</li>
+                <li>All rounds will be conducted at the venue.</li>
+            </ul>
+            <p><strong>Student Coordinator:</strong> S. Bala Surya Kumari, Ph: 9344234346</p>
+        </div>
+    </div>
+
+    <!-- Popup for Crescendo Clash -->
+    <div class="popup" id="crescendoClashPopup">
+        <div class="popup-content">
+            <button class="close-button" onclick="closePopup('crescendoClashPopup')">×</button>
+            <h2>CRESCENDO CLASH</h2>
+            <p>The Instrumental Competition is a vibrant event designed to bring together talented musicians from different backgrounds to showcase their skills and passion for music. Participants can perform solo or as part of a group using their chosen instruments, expressing their creativity through a variety of musical genres like classical, contemporary, or fusion. The event aims to celebrate musical artistry, provide a platform for performers to shine, and inspire the audience with captivating melodies. With expert judges and exciting prizes, it’s an opportunity for musicians to gain recognition and create memorable experiences.</p>
+            
+            <h3>EVENT FORMAT:</h3>
+            <ul>
+                <li>Performances can be solo, duet, or group.</li>
+                <li>Participants can choose from various genres like classical, contemporary, or fusion.</li>
+            </ul>
+
+            <h3>Rules and Regulations</h3>
+            <ol>
+                <li>Eligibility: Open to college students with valid ID.</li>
+                <li>Performance Time: Solo: 3-5 minutes | Duet: 4-6 minutes | Group: 6-8 minutes.</li>
+                <li>Instruments: Participants shall bring their own instruments.</li>
+                <li>Setup: Maximum 2 minutes for setup before performance.</li>
+                <li>Song Selection: Original or cover; no offensive content allowed.</li>
+                <li>Punctuality: Report 30 minutes before your slot; late arrivals may be disqualified.</li>
+                <li>Conduct: Respect judges, peers, and organizers. Misconduct leads to disqualification.</li>
+                <li>Safety: Handle instruments responsibly; avoid hazards.</li>
+            </ol>
+
+            <h3>Judging Criteria</h3>
+            <ol>
+                <li>Technical Skill (15 pts) – Accuracy, rhythm, and mastery of the instrument.</li>
+                <li>Musicality & Expression (10 pts) – Dynamics, phrasing, and emotional depth.</li>
+                <li>Creativity & Interpretation (10 pts) – Originality, improvisation, and artistic style.</li>
+                <li>Stage Presence (8 pts) – Confidence, engagement, and charisma.</li>
+                <li>Overall Impact (7 pts) – Audience connection and performance appeal.</li>
+            </ol>
+
+            <p><strong>Student Coordinator:</strong> Jane Gracy D, Ph: 78450 72426</p>
+        </div>
+    </div>
+
+    <!-- Popup for Blockbuster Bonanza -->
+    <div class="popup" id="blockbusterPopup">
+        <div class="popup-content">
+            <button class="close-button" onclick="closePopup('blockbusterPopup')">×</button>
+            <h2>BLOCKBUSTER BONANZA</h2>
+            <p>Blockbuster Bonanza is a fun and exciting game where players answer questions or participate in challenges based on popular blockbuster movies and famous songs. It might involve trivia, memory challenges, or mini-games related to famous films, songs, etc., with players competing to show off their movie knowledge and win prizes. The game is all about having a blast with friends and testing your love for the big screen!</p>
+            
+            <h3>EVENT FORMAT:</h3>
+            <h4>ROUND 1:</h4>
+            <p>"BGM Blast: Movie Soundtrack Challenge"</p>
+            <h4>ROUND 2:</h4>
+            <p>"Movie Mime Challenge: Act and Reveal"</p>
+            <h4>ROUND 3:</h4>
+            <p>"Scene-Nection: The Song Guessing Game"</p>
+            <h4>ROUND 4:</h4>
+            <p>"Sketch the Flick: Draw and guess the Movie"</p>
+            
+            <h3>Rules and Regulations</h3>
+            <ul>
+                <li>Number of participants: 2 members (per team)</li>
+                <li>Registration: Online registration only</li>
+                <li>No of rounds: 4</li>
+                <li>The Co-ordinator will monitor the participants; in case of any confusion, the decisions will be made by the Co-ordinators (the Co-ordinators decision is final).</li>
+                <li>In case of violation of any rule, the team will be disqualified.</li>
+                <li>The participants are asked to follow the rules and cooperate with the Co-ordinator to maintain the flow of the game without any disturbance.</li>
+            </ul>
+            
+            <p><strong>Student Coordinator:</strong> Afritha, Ph: 73958 56485</p>
+        </div>
+    </div>
+
+    <!-- Popup for IPL Auction -->
+    <div class="popup" id="iplAuctionPopup">
+        <div class="popup-content">
+            <button class="close-button" onclick="closePopup('iplAuctionPopup')">×</button>
+            <h2>IPL AUCTION</h2>
+            <p>This engaging and fun-filled event is designed to test your teamwork, analytical skills, and cricket knowledge. Participants will step into the shoes of team franchise owners and bid for their dream team using a virtual budget. With a pool of iconic players, strategic planning is crucial to build the ultimate squad. The event encourages collaboration, negotiation, and real-time decision-making.</p>
+            
+            <h3>EVENT FORMAT:</h3>
+            <ul>
+                <li>Teams bid strategically to assemble a strong squad within their budget.</li>
+                <li>The team formation strategy and successful bids determine the score.</li>
+            </ul>
+
+            <h3>Rules and Regulations</h3>
+            <ol>
+                <li>Registration: Team creation is mandatory for each participant and it must be distinctively different for every organization.</li>
+                <li>Maximum strength: A minimum number of five people is required for each team.</li>
+                <li>Scoring: Strategic team formation as well as successful bids made in the auction results in points accumulation.</li>
+                <li>Fair Play: It is important for all teams to conduct themselves in a fair manner and respect the spirit of the game as well as other participants in the competition.</li>
+                <li>Mobile Phones: Use of phones during the event is allowed but must be handled with care.</li>
+                <li>Event Boundaries: Participants can move freely within the entire boundaries of the auction zone for the duration of the event.</li>
+                <li>The organizer is the sole decision maker whose choices must be honored without any dispute.</li>
+                <li>Each team will be rewarded with a certificate of participation.</li>
+            </ol>
+
+            <p><strong>Student Coordinator:</strong> Yogeswar, Ph: 73862 94002</p>
+        </div>
+    </div>
+
+    <!-- Popup for Mic & Mingle -->
+    <div class="popup" id="micMinglePopup">
+        <div class="popup-content">
+            <button class="close-button" onclick="closePopup('micMinglePopup')">×</button>
+            <h2>MIC & MINGLE</h2>
+            <p>It is a solo competition. Just grab the mic and showcase any talent of yours on the stage. Examples include Stand-up Comedy, Singing, Storytelling, Impromptu Acting, Magic & Tricks, etc.</p>
+            
+            <h3>Judging Criteria:</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Criteria</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Creativity & Originality – Unique and engaging presentation.</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Stage Presence – Confidence, energy, and connection with the audience.</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Execution & Delivery – Clarity, timing, and overall performance quality.</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Audience Engagement – Ability to captivate and entertain the crowd.</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Overall Impact – Memorability and effectiveness of the act.</td>
+                        <td>10</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Student Coordinator:</strong> Valli M, Ph: 96007 80721</p>
+        </div>
+    </div>
+
+    <!-- Popup for Scavenger Hunt -->
+    <div class="popup" id="scavengerHuntPopup">
+        <div class="popup-content">
+            <button class="close-button" onclick="closePopup('scavengerHuntPopup')">×</button>
+            <h2>SCAVENGER HUNT</h2>
+            <p>The Scavenger Hunt is an exciting, campus-wide adventure where teams race against time to solve clues, complete tasks, and explore key locations.</p>
+            
+            <h3>EVENT FORMAT:</h3>
+            <ul>
+                <li>The team that collects more objects within the given time will win.</li>
+                <li>Team Size: max. 5 members.</li>
+                <li>Event Duration: 1 ½ hours.</li>
+            </ul>
+
+            <p><strong>Student Coordinator:</strong> Mathavan H, Ph: 90801 01686</p>
+        </div>
+    </div>
+
+    <!-- Popup for Scrambled Eggs -->
+    <div class="popup" id="scrambledEggsPopup">
+        <div class="popup-content">
+            <button class="close-button" onclick="closePopup('scrambledEggsPopup')">×</button>
+            <h2>SCRAMBLED EGGS</h2>
+            <p>Scrambled Eggs is a fun and engaging memory-based game that challenges participants to observe and recall details quickly. With a blindfolded catcher trying to identify the player who has shifted his/her place, the game tests attentiveness, strategy, and quick thinking, making for an exciting and interactive experience.</p>
+            
+            <h3>EVENT FORMAT:</h3>
+            <p>One participant is selected as the catcher and asked to observe the seating positions of the other participants. He is then blindfolded. Once the catcher is blindfolded, a player is selected and given a brief moment to change his/her place. Then, the catcher removes the blindfold and tries to identify who has moved by observing seating positions, clothing, or other identifiers. The game ends when the catcher identifies the respective player or the time runs out. If the catcher guesses correctly, the respective player becomes the new catcher for the next round. If the guess is incorrect, the catcher gets eliminated and the game continues.</p>
+
+            <h3>Rules and Regulations</h3>
+            <ol>
+                <li>Participants must stay silent and avoid giving hints.</li>
+                <li>The catcher cannot touch other players while blindfolded.</li>
+                <li>Players should move quickly and quietly to avoid detection.</li>
+                <li>Each round has a fixed time limit.</li>
+                <li>The game requires fairness—no peeking or external help allowed.</li>
+                <li>Decisions by the organizers are final.</li>
+            </ol>
+
+            <p><strong>Student Coordinator:</strong> Sriharini M, Ph: 75400 15395</p>
+        </div>
+    </div>
+
+    <!-- Popup for SDG Challenge -->
+    <div class="popup" id="sdgChallengePopup">
+        <div class="popup-content">
+            <button class="close-button" onclick="closePopup('sdgChallengePopup')">×</button>
+            <h2>SDG CHALLENGE: “ONE-MINUTE ACTION” REEL</h2>
+            <p>Activity: Students create a short, engaging Instagram or TikTok Reel (30-60 sec) demonstrating a simple action that supports any of the 17 Sustainable Development Goals (SDG).</p>
+            <h3>Example Topics:</h3>
+            <ul>
+                <li>SDG 13 (Climate Action): "3 easy ways to reduce your carbon footprint!"</li>
+                <li>SDG 2 (Zero Hunger): "How to reduce food waste at home."</li>
+                <li>SDG 6 (Clean Water): "Why you should turn off the tap when brushing your teeth!"</li>
+                <li>SDG 12 (Responsible Consumption): "Thrift shopping vs. fast fashion – which is better?"</li>
+            </ul>
+            <h3>Tools:</h3>
+            <p>Instagram Reels, TikTok, CapCut for editing</p>
+            <h3>Format:</h3>
+            <ul>
+                <li>Hook (0-5 sec) – Grab attention!</li>
+                <li>Problem (5-15 sec) – Explain why the issue matters.</li>
+                <li>Solution (15-40 sec) – Show the action step.</li>
+                <li>Call to Action (40-60 sec) – Encourage engagement.</li>
+            </ul>
+            <h3>Judging Criteria:</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Criteria</th>
+                        <th>Score (1-10)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Content & Relevance</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Creativity & Engagement</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Clarity & Communication</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Visual & Technical Quality</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Impact & Call to Action</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><strong>Total:</strong></p>
+            <p><strong>Student Coordinator:</strong> M. Anu Keerthana, Ph: 81229 00928</p>
+        </div>
+    </div>
+
+    <!-- Popup for Squid Game -->
+    <div class="popup" id="squidGamePopup">
+        <div class="popup-content">
+            <button class="close-button" onclick="closePopup('squidGamePopup')">×</button>
+            <h2>SQUID GAME</h2>
+            <p>Do you have what it takes to survive all rounds and claim victory? Join us for an electrifying Squid Game-themed event, where strategy, skill, and a bit of luck will determine the ultimate champion!</p>
+            
+            <h3>EVENT FORMAT:</h3>
+            <ul>
+                <li><strong>Red Light, Green Light:</strong> The classic childhood game with a twist! Dash forward when the light is green, but freeze when it's red. Get caught moving? You're out!</li>
+                <li><strong>Dalgona Challenge (Biscuit Edition):</strong> Every player will receive a Milk Bikis biscuit, which already has small pre-made holes. Within 5 minutes, they must complete as many full holes as possible. Each player must complete a minimum of 10 full holes to qualify.</li>
+                <li><strong>The Five-Legged Pentathlon:</strong> Teamwork is crucial! In a group of five, navigate a series of fun yet challenging mini-games designed to test coordination and speed.</li>
+                <li><strong>Music Ball:</strong> A high-energy game where players pass the ball as the music plays. When the music stops, the player holding the ball faces an elimination challenge.</li>
+                <li><strong>Goli Soda:</strong> A thrilling final round! In the final round, 10 goli balls will be placed inside a marked circle. Each player will have 5 chances to strike the balls. To qualify, they must successfully knock at least 2 goli balls out of the circle. Precision and skill are key to winning!</li>
+            </ul>
+
+            <h3>Rules and Regulations</h3>
+            <ul>
+                <li>Eliminated players are not allowed to participate in the next round.</li>
+                <li>If a coordinator or volunteer declares a player eliminated with proof, there will be no second chance. The player must leave the game immediately.</li>
+                <li>In Round 3, male and female players can form mixed-gender teams.</li>
+                <li>Players must arrive on time at the game location. Latecomers will be automatically eliminated.</li>
+                <li>Players must follow all rules and instructions given by volunteers.</li>
+                <li>Any rule violation will result in immediate elimination, with no second chances.</li>
+            </ul>
+
+            <p><strong>Student Coordinator:</strong> Sandhib K, Ph: 97861 97138</p>
+        </div>
+    </div>
+
+    <!-- Popup for Wisdom Talk -->
+    <div class="popup" id="wisdomTalkPopup">
+        <div class="popup-content">
+            <button class="close-button" onclick="closePopup('wisdomTalkPopup')">×</button>
+            <h2>WISDOM TALK: PROVERBS OF INDIAN KNOWLEDGE SYSTEM (IKS)</h2>
+            <p>Participants will have to pick a proverb (of their choice) related to Indian knowledge and wisdom, and record a speech explaining its meaning, and giving real-life examples.</p>
+            <p><strong>Example of an IKS-related Proverb:</strong> “Arise, awake and realize the importance of your blessings (intrinsic potential) in order to achieve the desired goal.”</p>
+            
+            <h3>Format:</h3>
+            <ol>
+                <li>Each participant will record a 4-5 minute speech explaining:
+                    <ul>
+                        <li>The meaning of the proverb.</li>
+                        <li>Relevance to Indian knowledge traditions (e.g., Ayurveda, Yoga, Vedic Mathematics).</li>
+                        <li>Real-life example (historical, modern-day, or personal experience).</li>
+                        <li>Conclusion with a takeaway lesson.</li>
+                    </ul>
+                </li>
+                <li>An accessible link of the recorded video should be sent to <a href="mailto:ritwisdomtalk@gmail.com">ritwisdomtalk@gmail.com</a> for evaluation. In your mail, mention your name, year & branch of study, and the name of the college.</li>
+            </ol>
+
+            <h3>Judging Criteria</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Criteria</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Content & Clarity</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Connection to IKS</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Real-life Example</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Speech Delivery</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Engagement & Impact</td>
+                        <td>10</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Student Coordinator:</strong> Harini M, Ph: 88072 37664</p>
+        </div>
+    </div>
+    <!-- Register Button at Bottom -->
+<div class="register-container">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiwH4qFpTEA0ilMSN84TeNKhpljtupDaXRvkRPMOBn4gG0_g/viewform?usp=sharing    " target="_blank" class="register-button">
+        Register Here
+    </a>
+</div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Left Side: Address & Logo -->
+            <div class="footer-left">
+                <img src="logo.png" alt="RIT Logo" class="footer-logo">
+                <div class="footer-address">
+                    <p><strong>Ramco Institute of Technology</strong></p>
+                    <p>North Venganallur Village, Rajapalayam – 626 117,</p>
+                    <p>Virudhunagar District, Tamil Nadu.</p>
+                    <p>📞 9865945423</p>
+                    <p>📞 9790119871</p>
+                    <p>✉️ <a href="https://mail.google.com/mail/?view=cm&to=eelclub@ritrjpm.ac.in" target="_blank">eelclub@ritrjpm.ac.in</a></p>
+                    <p>🌐 <a href="https://www.ritrjpm.ac.in" target="_blank">www.ritrjpm.ac.in</a></p>
+                </div>
+            </div>
+    
+            <!-- Right Side: Social Media & Copyright -->
+            <div class="footer-right">
+                <p>&copy; 2025 Stellar'25 Symposium. All rights reserved.</p>
+                <div class="social-icons">   
+                    <a href="https://chat.whatsapp.com/CBbNMTPeJRd4txoOOdtCxN" target="_blank"><img src="whatsapp.png" alt="Whatsapp"></a>
+                    <a href="https://www.instagram.com/stellar_2k25?igsh=a21yODdwMjQxNmRu" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    
+</body>
+<script>
+    function closePopup(popupId) {
+        document.getElementById(popupId).style.display = 'none';
+        document.body.style.overflow = ''; 
+    }
+
+    function openPopup(popupId) {
+        document.getElementById(popupId).style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+    window.onload = function() {
+        setTimeout(function() {
+            document.getElementById("popup").style.display = "flex";
+        }, 1000); // Delay popup by 1 seconds
+    };
+    
+    // Close popup when clicking the close button
+    function closePopup1() {
+        document.getElementById("popup").style.display = "none";
+    }
+</script>
+</html>

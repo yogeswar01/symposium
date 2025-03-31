@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #f8f9fa;
+    color: #89076fe8;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Header */
+header {
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Aligns items vertically */
+    justify-content: center; /* Centers the text */
+    margin-bottom: 3rem;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 10px 20px;
+    position: relative; /* Allows absolute positioning for the logo */
+    /*background-color: #ddd;
+    border-radius: 30PX;
+    opacity: 0.7;*/
+}
+
+.header-logo {
+    width: 100px; /* Adjust size as needed */
+    height: 60px;
+    position: absolute; /* Positions logo independently */
+    left: 20px; /* Moves logo to the left end */
+    top: 50%; /* Aligns vertically */
+    transform: translateY(-50%); /* Adjusts alignment */
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column; /* Stacks the text */
+    align-items: center; /* Ensures text remains centered */
+    text-align: center; /* Centers the text inside the container */
+}
+
+header h1 {
+    font-size: 3.5rem;
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.25rem;
+    color: #4a5568;
+}
+
+/* Popup */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(131, 4, 91, 0.896);
+    display: none; /* Hide by default */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    position: relative;
+    max-width: 90%;
+    width: 900px;
+    max-height: 80vh; /* Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(131, 4, 91, 0.896);
+    padding: 2rem;
+}
+
+/* Close Button */
+.close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: white;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.close-button:hover {
+    background-color: #f3f4f6;
+}
+
+/* Events Grid */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+/* Event Cards */
+.event-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    
+}
+
+.event-content {
+    padding: 1.5rem;
+}
+
+.event-content h3 {
+    font-size: 1.25rem;
+    color: #2d3748;
+    margin-bottom: 0.75rem;
+}
+
+.event-content p {
+    color: #4a5568;
+    margin-bottom: 1.5rem;
+    min-height: 4.8em;
+}
+
+.view-details-button {
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    text-align: center;
+}
+
+.view-details-button:hover {
+    background-color: #4338ca;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2d3748;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer-content p {
+    margin: 0.5rem 0;
+}
+
+.footer-content a {
+    color: #4f46e5;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    
+}
+
+.event-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0.95;
+}
+
+.popup {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    overflow: auto; /* Enables scrolling */
+}
+
+.popup-content {
+    background: #fff;
+    width: 80%;
+    max-width: 600px;
+    max-height: 80vh; /* Restricts max height */
+    overflow-y: auto; /* Enables vertical scrolling */
+    padding: 40px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+
+footer {
+    background: #222;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Left Section: Address & Logo */
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-logo {
+    width: 80px; /* Adjust as needed */
+    height: auto;
+}
+
+.footer-address p {
+    margin: 5px 0;
+    text-align: left;
+}
+
+.footer-address a {
+    color: #FFD700; /* Gold color for links */
+    text-decoration: none;
+}
+
+.footer-address a:hover {
+    text-decoration: underline;
+}
+
+/* Right Section: Social Media */
+.footer-right {
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+body {
+    background-image: url('abc.jpg');
+    background-size: 100vw 100vh; /* Forces image to stretch across full width & height */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    width: 100vw; /* Ensures full screen width */
+    height: 100vh; /* Ensures full screen height */
+}
+
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: row; /* Keeps logo on the left */
+        align-items: center;
+    }
+
+    .header-logo {
+        width: 70px; /* Adjust logo size for smaller screens */
+        margin-right: 15px;
+    }
+
+    .header-content {
+        text-align: center;
+        flex-grow: 1;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-logo {
+        width: 60px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+}
+/* Popup Background */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popup Box */
+.popup-content1 {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Image */
+.popup-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Button */
+.popup-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #ff5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.popup-button:hover {
+    background: #e64a19;
+}
+/* Button Container (Fixes at Bottom) */
+.register-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 1000;
+}
+
+/* Register Button */
+.register-button {
+    background: #ec0593;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+/* Hover Effect */
+.register-button:hover {
+    background: #5d01fc;
+}
